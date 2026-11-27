@@ -27,11 +27,17 @@
 - Python이 설치되어 있어야 합니다.
 - 저장소를 GitHub Desktop으로 내려받은 뒤, 저장소 폴더에서
   PowerShell 또는 VS Code 터미널을 엽니다.
+- 11주차 파일은 `week11` 폴더에 있으므로, 아래 명령을 먼저 실행합니다.
+
+```powershell
+cd week11
+```
+
 - 프로그램을 실행할 때 사용할 CSV 파일이 필요합니다.
 
 ### 프로그램 실행
 
-저장소 폴더에 `scores.csv`가 있는 경우 다음 명령으로 실행합니다.
+현재 폴더에 `scores.csv`가 있는 경우 다음 명령으로 실행합니다.
 
 ```powershell
 python load_scores.py scores.csv
@@ -91,7 +97,7 @@ python -m pytest test_ai_B.py --cov=load_scores --cov-report=term-missing
 실행용 복사본에서 `find_max` 테스트만 선택해 실행했습니다.
 
 ```powershell
-python -m pytest test_ai_bug_run.py -v -k find_max
+python -m pytest test_ai_bug.py -v -k find_max
 ```
 
 - 실행 결과: **8개 통과, 3개 실패**
